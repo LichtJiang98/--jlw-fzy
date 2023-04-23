@@ -1,0 +1,126 @@
+
+
+/* 这里是顶部导航栏 */
+.nav-search-box-home {
+    background-color: rgba(255, 255, 255, 0.8 );
+    position: fixed;
+    -webkit-transform: translateZ(0);
+    z-index: 1000;
+    top: 0;
+    /* width: 100%; */
+    /* margin-left: 0.3px; */
+    /* margin-left: -19px; */
+  }
+  
+  .search-box {
+    display: inline-block;
+    /* position: absolute;
+    top: 15px; */
+    /* right: 50px; */
+    margin-left: 50px;
+    margin-top: 12px;
+    width: 160px;
+    height: 28px;
+    padding: 0 10px 0px 10px;
+    border: 2px solid rgb(44, 90, 44, 0.45);
+    border-radius: 20px;
+    /* box-shadow: 0 0 2px 2px rgba(44, 90, 44, 0.45); */
+  }
+  .search-home {
+    display: flex;
+    flex: 1;
+    height: 20px;
+    margin: 2px 5px;
+    padding: 0 5px;
+    border-radius: 3px;
+    background-color: transparent;
+  }
+
+  @keyframes anis {
+    100% {
+    transform:translateY(-60px)
+  }
+  }
+  .text {
+    padding-left: 4px;
+    font-size: 12px;
+    color: #9c9fa1;
+    margin-top: 10px;
+    margin-left: -2px; 
+    animation:anis 8s linear infinite;
+  }
+  .text:hover {
+    animation-play-state:paused;
+  }
+
+
+/* 
+  .text-item{
+    width: 100%;
+    line-height: 16px;
+    margin-bottom: 2px;
+    height: 16px; 
+  } */
+
+  
+  .name {
+    font-size: 14px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -10px;
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0.1 );
+    border-bottom: none;
+  }
+  
+  .location .icon-arrow {
+    margin-left: 2px;
+    font-size: 12px;
+    color: #7f7f80;
+  }
+  
+  .form {
+    border-left: solid 1px #e5e5e5;
+    margin-left: 5px;
+    margin-top: 3px;
+    padding-left: 5px;
+    line-height: 19px;
+    overflow: hidden;
+  }
+  .icon-seach {
+    vertical-align: middle;
+    padding: 0 2px 0 12px;
+    color: #9c9fa1;
+    font-size: 15px;
+  }
+  
+  
+  .name {
+    line-height: 22px;
+    font-weight: 500;
+    color: #404940;
+    text-shadow: #7f7f80;
+    margin-top: 2px;
+    /* font-family: STXihei, "Microsoft YaHei"; */
+  }
+  
+  .text-title {
+    position: absolute;
+    left: 38px;
+    top: 9px;
+    font-size: 18px;
+    font-family: "Microsoft YaHei","黑体","宋体","sans-serif";
+    font-weight: 600;
+    /* text-shadow: black 0 1px 0; */
+    /* background-image: linear-gradient(to bottom, rgb(28, 73, 19),rgba(44, 90, 44,0.65));
+     */
+     color: rgb(45, 77, 40);
+    /* -webkit-background-clip: text;
+    color: transparent; */
+  }
+  
+  .icon-map {
+    font-size: 25px;
+    color: #fff;
+  }
+  

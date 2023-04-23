@@ -1,0 +1,698 @@
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 375px) {
+  .video-slider-container .react-player {
+    width: 100%;
+    max-height: 145px;
+  }
+  .restaurant-wrapper{
+    width: 100%;
+  }
+}
+
+.shop-total-wrapper{
+  background-color: #ffffff;
+}
+.shop-total{
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.line-cut{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.restaurant-navbar{
+   width: 100%;
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 99;
+   color: white;
+}
+
+.navbar-color-change{
+  background-color: #fff;
+  color: black;
+  transition: background-color  0.1s ease-in-out;
+  transition: color  0.1s ease-in-out;
+}
+/* 喜欢 */
+.restaurant-navbar .like{
+  color: rgba(255, 0, 0, 0.637);
+}
+/* 分享 */
+.social{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.social .social-title{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #999999;
+}
+
+.social .social-aciton{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+}
+.social-aciton .box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.social-aciton .view{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  padding: 10px;
+  margin-top: 20px;
+  transition: all 0.2s;
+}
+.social-aciton .social-icon{
+  width:30px;
+  height:30px;
+  color: rgb(250, 248, 248);
+}
+.social-aciton .view:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.social .social-aciton #weixin{
+  background-color: #07C160;
+}
+.social .social-aciton #weixin2{
+  background-color:#2EBF80;
+}
+.social .social-aciton #weibo{
+  background-color: #e6162d;
+}
+.social .social-aciton #qq{
+  background-color: #4D88FF;
+}
+
+/* 餐厅头部轮播图，视频和图片 */
+.video-slider-container {
+  width: 100%;
+  max-width: 375px;
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.video-slider-container .video-element{
+  width: 100%;
+  height: 100%;
+  max-height: 140px;
+  object-fit: cover;
+}
+
+.video-slider-container .swiper-wrapper img {
+  width: 100%;
+  height: 140px;
+}
+
+.video-wrapper {
+  position: relative;
+}
+
+.video-wrapper .video-btn{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  cursor: pointer;
+  background: #898a8bd0;
+  color: rgba(233, 233, 233, 0.842);
+  font-size: 25px;
+  border-radius: 2px;
+}
+
+.video-wrapper .video-btn:hover{
+  background: #898a8bd0;
+  color: rgb(255, 255, 255);
+
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(184, 182, 182, 0.767) !important;
+}
+
+/* 餐厅详细信息 */
+.restaurant-wrapper{
+  max-width: 375px;
+  margin: 0 auto;
+}
+.restaurant-info {
+  background-color: #fff;
+  box-shadow: 0px 5px 2px rgba(180, 179, 179, 0.1);
+  padding: 10px 0px;
+  margin-bottom: 10px;
+}
+
+.restaurant-info .view {
+  font-size: 14px;
+  color: #666;
+}
+
+
+.restaurant-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.restaurant-score-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 0.5px solid #e6e6e6;
+  padding-bottom: 6px;
+}
+
+.restaurant-score-wrapper .score {
+  font-size: 18px;
+  color: #DF1C0A;
+}
+
+.restaurant-score span {
+  font-size: 14px;
+  color: #666;
+}
+
+.restaurant-discuss-num {
+  font-size: 14px;
+  color: #666;
+}
+.restaurant-aver-price {
+  font-size: 14px;
+  color: #666;
+}
+
+.restaurant-type {
+  font-size: 14px;
+  color: #666;
+}
+
+.restaurant-time-wrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid #e6e6e6;
+  padding: 6px 0;
+  gap: 5px;
+}
+
+.restaurant-time{
+  font-size: 16px;
+  color: #000000;
+  font-weight: 600;
+}
+.restaurant-tel {
+  font-size: 16px;
+  color: #666;
+}
+
+.restaurant-address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 0.5px solid #e6e6e6;
+  gap: 5px;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.restaurant-address .right {
+  display: flex;
+  gap: 10px;
+}
+.restaurant-address .right span{
+  padding: 0 1px;
+}
+.restaurant-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+
+}
+
+.restaurant-queuing ,.restaurant-order  {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+
+
+.restaurant-order .order,.restaurant-queuing .queuing {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 600;
+  margin-right: 4px;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+
+/* 用户评论模块 */
+.comment-list{
+  margin-top: 10px;
+}
+.comment-title {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 2px;
+}
+
+.comment-title .comment-num{
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.comment-check{
+  font-size: 12px;
+  color: #979797;
+}
+.comment-tags{
+  display: flex;
+  flex-flow:row wrap ;
+  gap: 6px;
+}
+.comment-tags .comment-tag{
+  font-size: 12px;
+  border-radius: 6px;
+  padding: 2px 6px;
+  margin: 2px 0px;
+  background-color: #2cfcac2d;
+}
+
+.comment-wrapper .comment-main{
+  padding: 0.5rem 0;
+}
+.comment-main .comment-box{
+  display: flex;
+}
+.comment-main .comment-avatar{
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.5rem 0 0;
+}
+.comment-main .comment-content{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  padding: 0.15rem 0.15rem 0 0;
+}
+.comment-content .comment-name{
+  font-size: 0.875rem;
+  color: rgba(26, 95, 243, 0.568);
+}
+.comment-content .comment-name{
+  font-size: 14px;
+  color: rgba(26, 95, 243, 0.568);
+}
+.comment-content .comment-text{
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+.comment-content .comment-text-cut{
+  font-size: 12px;
+  line-height: 12px;
+  color: #999;
+}
+.comment-image{
+  position: relative;
+  display: flex;
+  gap: 2%;
+}
+.comment-image .food-image{
+  width: 33%;
+  cursor: pointer;
+}
+.comment-image .image-num{
+  position: absolute;
+  display: flex;
+  gap: 2px;
+  bottom: 0;
+  right: 0;
+  padding: 2px 4px;
+  color: #d8d8d8;
+  background-color: #3333339f;
+  border-radius: 4px;
+}
+.comment-bottom{
+  display: flex;
+  justify-content: center;
+  border-top: 0.5px solid #e6e6e6;
+  padding: 4px 0;
+  box-shadow: 0px 5px 2px rgba(180, 179, 179, 0.1);
+  margin-bottom: 20px;
+}
+
+/* 更多推荐 */
+.more-title{
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  padding-bottom: 12px;
+}
+.more-box{
+  position: relative;
+}
+.more-card {
+  width: 49%;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 2%;
+  box-shadow: 0px 4px 5px rgba(182, 182, 182, 0.562);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.more-card:hover{
+  transform: translateY(-4px);
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s
+}
+.more-card .m-img-box{
+  position: relative;
+}
+.more-card .dis{
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  padding-left: 10px;
+}
+.more-card .card-bottom{
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 5px;
+}
+.more-card .m-name{
+  font-size: 10px;
+  color: #999;
+  line-height: 12px;
+}
+.more-card .m-title{
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  line-height: 20px;
+  font-family: PingFangSC-Medium;
+}
+.more-card .tags{
+  display: flex;
+  gap: 5px;
+}
+.more-card .tags div{
+  font-size: 12px;
+  background-color: #f5bb3eb7;
+  color: #030303;
+  padding: 0px 6px;
+  border-radius: 6px;
+}
+.more-card .prices{
+  display: flex;
+  gap: 5px;
+}
+.more-card .prices .view{
+  align-items: baseline;
+  height: 22px
+}
+.prices .new-price{
+  display: flex;
+  font-size: 20px;
+  color: #ee6c21;
+  font-weight: 600;
+  line-height: 22px;
+}
+.prices .new-price span{
+  font-size: 8px;
+}
+.prices .old-price {
+  display: flex;
+  font-size: 14px;
+  color: #858585;
+  text-align: end;
+  line-height: 24px;
+}
+.old-price div{
+  text-decoration: line-through;
+}
+.prices .old-price span{
+  font-size: 8px;
+}
+.prices .discount{
+  padding: 0 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ee6c21;
+  border-radius: 10px;
+  text-align: end;
+  line-height: 26px;
+}
+.prices .eat{
+  font-size: 12px;
+  font-weight: 500;
+  color: #e6bba3;
+  text-align: end;
+  line-height: 26px;
+}
+
+.card-bottom .user-info{
+  display: flex;
+  gap: 5px;
+  align-items: end;
+  justify-content: space-between;
+}
+.card-bottom .user-info .username{
+  font-size: 12px;
+}
+.card-bottom .aview{
+  display: flex;
+  gap: 4px;
+}
+
+.select-wrapper{
+  height: 100%;
+  background: linear-gradient(to bottom right, #A0DAA9, #eeedc4a4,#f1dda4b7, #39d5ff);
+  backdrop-filter: blur(10px);
+}
+
+.select-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(241, 245, 209, 0.034);
+  border-radius: 50%;
+}
+
+.select-title{
+  margin: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.selections{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.selection{
+  font-size: 16px;
+  padding: 2px;
+  z-index: 9999;
+}
+/* tab转换 */
+.tab-wrapper {
+  width: 100%;
+  position: sticky;
+  top: 35px;
+  z-index: 20;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+.content-wrapper{
+  padding: 0 1px;
+}
+
+.adm-tabs {
+  --active-line-border-radius: var(--active-line-height);
+  --active-line-height: 6px;
+  --active-line-color:  #c3e9b9;
+  --active-title-color:  #000000;
+}
+
+/* 地图样式 */
+.map-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.map-wrapper .map-left{
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  background-color: rgba(128, 128, 128, 0.5);
+  font-size: 24px;
+  color: white;
+  border-radius: 50%;
+  padding: 6px;
+  z-index: 9999;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.map-wrapper .map-left:hover{
+  background-color: rgba(64, 64, 64, 0.6);
+}
+.map-wrapper .map-img{
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.map-img p {
+  margin: 0;
+}
+.map-restaurant-info {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 -5px 30px #dbdbdba6;
+  border-radius: 30px;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+.map-restaurant-info .m-restaurant-wrapper{
+  margin: 0 20px;
+  margin-top: 25px;
+}
+.m-restaurant-wrapper .m-restaurant-info .m-r-title{
+  font-size: 16px;
+  font-weight: 600;
+}
+.m-restaurant-wrapper .m-restaurant-info .view{
+  border: 1px solid transparent;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+.m-restaurant-wrapper .m-restaurant-info .address{
+  margin-left: 5px;
+}
+.m-time{
+  display: flex;
+  flex-direction: row;
+  padding: 8px 0 ;
+  justify-content: space-between;
+}
+
+.time-fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.m-time .pre{
+  font-size: 18px;
+  font-weight: 550;
+  background-color: #bbe9c360;
+  padding: 5px 8px;
+  border-radius: 4px;
+  display: flex;
+}
+.m-action{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.m-action .btn{
+  background: linear-gradient(to bottom right, #8cd4ad, #dae78da4, #FDE3A7);
+  color: #000000;
+  font-size: 18px;
+  font-weight: 550;
+}
+.error{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: steelblue;
+  font-size: 70px;
+  position: absolute;
+  top: -600px;
+  left: 80px;
+}

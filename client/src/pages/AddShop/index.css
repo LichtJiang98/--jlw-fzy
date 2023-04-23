@@ -1,0 +1,88 @@
+
+
+.upload-text-1{
+    margin-top: 30px;
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.upload-text-2{
+    color: rgba(39, 110, 39, 0.8);
+}
+
+.upload-text-3{
+    margin-top: 8px;
+    margin-left: 15px;
+    font-size: 10px;
+    color: gray;
+}
+
+.imageUpload{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.upload-image{
+    margin-top: 10px;
+}
+
+.upload-input{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.575);
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 340px;
+}
+
+ .main-map{
+    height: 200px;
+    width: 300px;
+    margin-left: 10%;
+}
+
+#main-container{
+    height: 200px;
+    width: 300px;
+} 
+
+.upload-type{
+    position: relative;
+}
+
+.map-mask{
+    background-color: rgba(0, 0, 0, 0.568);
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 74px;
+    left: 38px;
+    z-index: 1000;
+}
+
+.map-text{
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    font-weight: 500;
+    color: white;
+    z-index: 1001;
+}
+
+.upload-status{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.checkbox{
+    margin-left: 15px;
+    
+}
+
+.textarea{
+    margin-top: 10px;
+    border: 1px solid rgba(168, 167, 167, 0.863);
+    width: 90%;
+    margin-left: 4%;
+}

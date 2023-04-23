@@ -1,0 +1,58 @@
+{
+    "lists":[
+        {
+            "id": 0,
+            "title": "仁和小菜（锦秋路店）",
+            "images": "https://img.meituan.net/msmerchant/e4112f4edcd777bddfcce7ee0d91e2c843714.jpg",
+            "score": "4.4",
+            "averPrice": "88",
+            "type": "上海本帮菜",
+            "area": "上海大学",
+            "distance": "距您477m",
+            "discounts": "20元优惠券 x 2张"
+          },
+          {
+            "id": 1,
+            "title": "行走的椰子（聚丰园路店）",
+            "images": "https://p1.meituan.net/biztone/756867898_1681553284098.jpeg",
+            "score": "4.0",
+            "averPrice": "88",
+            "type": "饮品店",
+            "area": "上海大学",
+            "distance": "距您283m",
+            "discounts": "￥9.9 [单人]草莓啵啵乳"
+          },
+          {
+            "id": 2,
+            "title": "螺城柳州螺蛳粉（上海大学店）",
+            "images": "https://p0.meituan.net/merchant/a388af07f728ca0f9683508da8eea29e840833.jpg",
+            "score": "4.3",
+            "averPrice": "25",
+            "type": "米粉",
+            "area": "上海大学",
+            "distance": "距您296m"
+          },
+          {
+            "id": 3,
+            "title": "鱼悦府（聚丰购物广场店）",
+            "images": "https://p0.meituan.net/biztone/1445416841_1675847206025.jpeg",
+            "score": "4.5",
+            "averPrice": "135",
+            "type": "鱼火锅",
+            "area": "上海大学",
+            "distance": "距您641m",
+            "discounts": "￥168 合家欢三人餐"
+          },
+          {
+            "id": 4,
+            "title": "ADACIAO阿哒俏一碗好米线（经纬汇店）",
+            "images": "https://p0.meituan.net/merchant/d7217b267dba2a2858d45981a8b3ada396584.jpg",
+            "score": "4.2",
+            "averPrice": "23",
+            "type": "小吃快餐",
+            "area": "经纬汇",
+            "distance": "距您1.3km",
+            "discounts": "35元代50元券"
+          }
+    ]
+}

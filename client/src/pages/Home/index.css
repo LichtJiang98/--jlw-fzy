@@ -1,0 +1,537 @@
+/* 这里是轮播图 */
+/* .swiper{
+    margin: 0 20px;
+} */
+body{margin: 0;}
+/* html{height: 667px;} */
+html{height: auto;
+    padding: 0;
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+  /* background-color: #e5e5e5; */
+}
+:root {
+  /* background: -webkit-linear-gradient(
+      top,
+      rgb(87, 122, 65),
+      rgba(210, 224, 193, 0.7)
+    ) */
+    /* height:100%; */
+    overflow: auto;
+    background-color: #e5e5e5;
+    height: 100%;
+    
+    /* url("../../assets/bc.jpg"); */
+  /* background-image:url('../../assets/bc.jpg'); */
+}
+.home-swiper {
+  padding: 0;
+  /* margin-left: -10px; */
+  margin: 0;
+  overflow: auto;
+}
+
+.content {
+  height: 12px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  user-select: none;
+}
+/* 这里是顶部导航栏 */
+.nav-search-box-home {
+  background-color: rgba(255, 255, 255, 0.8 );
+  position: fixed;
+  -webkit-transform: translateZ(0);
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  /* margin-left: 0.3px; */
+  /* margin-left: -19px; */
+}
+
+.search-box {
+  display: inline-block;
+  /* position: absolute;
+  top: 15px; */
+  /* right: 50px; */
+  margin-left: 50px;
+  /* margin-top: -5px; */
+  width: 160px;
+  height: 28px;
+  padding: 0 10px 2px 10px;
+  border: 2px solid rgb(44, 90, 44, 0.45);
+  border-radius: 20px;
+  /* box-shadow: 0 0 2px 2px rgba(44, 90, 44, 0.45); */
+}
+.search {
+  display: flex;
+  flex: 1;
+  height: 20px;
+  margin: 5px 5px;
+  padding: 0 5px;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.name {
+  font-size: 14px;
+  margin-left: -5px;
+  margin-right: 5px;
+}
+
+.location .icon-arrow {
+  margin-left: 2px;
+  font-size: 12px;
+  color: #7f7f80;
+}
+
+.form {
+  border-left: solid 1px #e5e5e5;
+  margin-left: 5px;
+  padding-left: 5px;
+  line-height: 20px;
+}
+.icon-seach {
+  vertical-align: middle;
+  padding: 0 2px 0 12px;
+  color: #9c9fa1;
+  font-size: 15px;
+}
+
+.text {
+  position: relative;
+  bottom: 1px;
+  padding-left: 4px;
+  font-size: 13px;
+  color: #9c9fa1;
+}
+
+.name {
+  line-height: 20px;
+  font-weight: 500;
+  color: #404940;
+  text-shadow: #7f7f80;
+  /* font-family: STXihei, "Microsoft YaHei"; */
+}
+
+.text-title {
+  position: absolute;
+  left: 38px;
+  top: 9px;
+  font-size: 18px;
+  font-family: "Microsoft YaHei","黑体","宋体","sans-serif";
+  font-weight: 600;
+  /* text-shadow: black 0 1px 0; */
+  /* background-image: linear-gradient(to bottom, rgb(28, 73, 19),rgba(44, 90, 44,0.65));
+   */
+   color: rgb(45, 77, 40);
+  /* -webkit-background-clip: text;
+  color: transparent; */
+}
+
+.icon-map {
+  font-size: 25px;
+  color: #fff;
+}
+
+/* 以下为搜索框导航栏 */
+
+.menu-box{
+  position: fixed;
+  top: 8px;
+  right: 18px;
+  z-index: 1001;
+}
+/* 菜单按钮 */
+.menu-button{
+  width: 30px;
+  height: 30px;
+  background-color: rgba(44, 90, 44, 0.6);
+  border-radius: 50%;
+  /* 投影 */
+  /* box-shadow: 0 0 0 2px rgba(67, 124, 50, 0.3); */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 5px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.menu-button:hover{
+  background-color: rgba(44, 90, 44, 0.6);
+  box-shadow: 0 0 0 2px rgba(67, 124, 50, 0.3);
+}
+.menu-button .line-box{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+/* 菜单按钮图标（四条杠） */
+.menu-button .line{
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+}
+/* 前后两条短，中间的长 */
+.menu-button .line:first-child{
+  width: 40%;
+  transform-origin: right;
+  /* 过渡效果 */
+  transition: transform 0.3s ease-in-out;
+}
+.menu-button .line:last-child{
+  width: 40%;
+  align-self: flex-end;
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+.menu-button .line:nth-child(2){
+  background-color: #fff;
+  width: 65%;
+  height: 2px;
+  border-radius: 2px;
+}
+/* 菜单列表 */
+.menu-list{
+  width: 90px;
+  height: 115px;
+  background-color: #fff;
+  border-radius: 8px;
+  list-style: none;
+  padding: 2px;
+  box-shadow: 0 0 1px 1px rgba(22, 54, 19, 0.15);
+  position: absolute;
+  top: 31px;
+  right: 20px;
+  /* 默认隐藏 */
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: 0.3s ease;
+  /* 过渡延迟 */
+  transition-delay: 0.1s;
+}
+/* 菜单项 */
+.menu-list li{
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  /* 默认隐藏 */
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: 0.2s ease-in;
+}
+.menu-list li:hover{
+  color: #66a34a;
+}
+/* 菜单项下边框 */
+.menu-list li::before{
+  content: "";
+  width: calc(100% - 24px);
+  height: 1px;
+  background-color: rgba(92,103,255,0.1);
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+}
+
+.menu-list li:last-child::before{
+  display: none;
+}
+/* 菜单项图标 */
+.menu-list .fa{
+  font-size: 14px;
+  width: 12px;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 菜单项文本 */
+.menu-list span{
+  font-size: 12px;
+  /* margin-left: ; */
+}
+
+
+.active .line-box{
+  transform: rotate(-90deg);
+}
+.active .line-box .line:first-child{
+  transform: translateX(13px) translateY(3.5px)
+}
+.active .line-box .line:nth-child(2){
+  transform: rotate(-90deg) translateX(-3px) translateY(6px);
+}
+.active .line-box .line:nth-child(3){
+  transform: translateY(-3px);
+}
+.active .line-box .line:last-child{
+  transform: translateY(-3.5px) translateX(1px);
+}
+/* 菜单列表的变化 */
+.active .menu-list{
+  opacity: 1;
+  transform: scale(1);
+}
+.active .menu-list li{
+  /* 执行动画：动画名 时长 线性 停留在最后一帧 */
+  animation: fade-in-item 0.4s linear forwards;
+}
+/* 接下来为每一项设置动画延迟时间 */
+.active .menu-list li:nth-child(1){
+  animation-delay: 0.1s;
+}
+.active .menu-list li:nth-child(2){
+  animation-delay: 0.2s;
+}
+.active .menu-list li:nth-child(3){
+  animation-delay: 0.3s;
+}
+.active .menu-list li:nth-child(4){
+  animation-delay: 0.4s;
+}
+
+/* 定义动画 */
+@keyframes fade-in-item {
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+
+/* 以下是按钮部分 */
+.button-box {
+  /* position: fixed; */
+  position: absolute;
+  bottom: 6px;
+  text-align: center;
+}
+
+.level-box {
+  overflow: auto;
+  height: 310px;
+  scroll-behavior:smooth;
+}
+
+/* 以下为美食店铺内容 */
+.items {
+  /* background-color: #f0f0f0; */
+  margin-top: -5px;
+  /* background-color: rgba(250,250,250); */
+  padding: 8px 0 0 0;
+  width: 115%;
+  height: 100%;
+  margin-left: -30px;
+  overflow: auto;
+  /* margin-left: -32px; */
+  /* width: 100%; */
+  /* border: 1px solid black; */
+}
+.item {
+  width: 319px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: white;
+}
+.img-box {
+  display: inline-block;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.image-img {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+}
+.right-content {
+  width: 63%;
+  /* height: 90px; */
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  right: -90px;
+}
+.right-content-name {
+  /* position: absolute;
+    top: 5px; */
+  text-align: left;
+  width: 190px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 3px;
+}
+.right-content-score {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgb(201, 0, 0);
+  font-weight: 600;
+}
+.right-content-score-danwei {
+  display: inline-block;
+  margin-left: 18px;
+  margin-right: 10px;
+  color: rgb(201, 0, 0);
+  font-size: 10px;
+  padding-right: 5px;
+  border-right: 1px solid #c2c2c2;
+}
+.right-content-comments {
+  font-size: 10px;
+  margin-right: 5px;
+  padding-right: 8px;
+  border-right: 1px solid #c2c2c2;
+}
+.right-content-average {
+  font-size: 10px;
+  margin-right: 5px;
+}
+.right-content-details {
+  margin: 5px;
+  font-size: 10px;
+  color: #c2c2c2;
+}
+.right-content-description {
+  /* position: absolute;
+    left: 0; */
+  margin-left: -5px;
+}
+.right-content-distance {
+  float: right;
+}
+.right-content-event {
+  margin-bottom: 10px;
+}
+.right-content-cheap-icon {
+  background-color: rgb(226, 168, 8);
+  color: white;
+  border-radius: 2px;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 12px;
+}
+.right-content-cheap-description {
+  font-size: 10px;
+  margin-left: 18px;
+  width: 180px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.more-title-home{
+  display: inline-block;
+  color: #7f7f80;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+.more-ad{
+  display: inline-block;
+  color: #7f7f80;
+  position: relative;
+  left: 240px;
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+/* 以下为面包屑 */
+.nav-tinybar {
+  position: relative;
+  margin-top: 12px;
+  margin-left: 18px;
+  width: 100%;
+  height: 34px;
+  /* border: 1px solid black; */
+  overflow: hidden;
+}
+
+.nav-tinybar ul li {
+  display: inline-block;
+  /* height: 23px; */
+  /* border:1px solid black; */
+  font-size: 10px;
+  color: #404940;
+  margin-left: 8px;
+  line-height: 2rem;
+  padding: 2px 4px;
+  border-radius: 3px;
+  background-color: rgba(183, 194, 185, 0.685);
+}
+
+.nav-tinybar .active{
+  display: inline-block;
+  /* height: 23px; */
+  /* border:1px solid black; */
+  font-size: 10px;
+  color: #404940;
+  margin-left: 8px;
+  line-height: 2rem;
+  padding: 2px 4px;
+  border-radius: 3px;
+  background-color: rgba(183, 194, 185, 0.685);
+  border: 1px solid #2f442e;
+}
+
+.nav-tinybar ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* 没有更多 */
+.no-more{
+  text-align: center;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.no-more-detail{
+  text-align: center;
+  color: grey;
+  font-size: 12px;
+  margin-bottom: 20px;
+}

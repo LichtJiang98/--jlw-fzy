@@ -1,0 +1,185 @@
+{
+    "lists":[
+        {
+            "id": 0,
+            "title": "西塔老太太泥炉烤肉（华润时代广场店）",
+            "images": 
+              "https://img.meituan.net/msmerchant/167a926664f0ef591266633de467edd4252711.png",
+            "score": "4.8",
+            "averPrice": "148",
+            "type": "烤肉",
+            "area": "浦东陆家嘴金融贸易区",
+            "distance": "距您15.8km",
+            "sort": [
+                {
+                    "key": "人气排序",
+                    "value": "300"
+                  },
+              {
+                "key": "距离排序",
+                "value": "15800"
+              },
+              {
+                "key": "人均排序",
+                "value": "148"
+              }
+            ],
+            "position": [
+              {
+                "key": "附近",
+                "value": "不限"
+              },
+              {
+                "key": "热门地标",
+                "value": "上海环球金融中心"
+              },
+              {
+                "key": "热门商圈",
+                "value": "浦东陆家嘴金融贸易区"
+              }
+            ],
+            "select": [
+              {
+                "price": "100-300",
+                "special": ["网红店"]
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "title": "西塔老太太泥炉烤肉（人广来福士店）",
+            "images": 
+              "https://p0.meituan.net//deal/46c037069bd86a3733959b98a1aa81b8362156.jpg",
+            "score": "3.5",
+            "averPrice": "151",
+            "type": "烤肉",
+            "area": "近人民广场",
+            "distance": "距您12.5km",
+            "sort": [
+              {
+                "key": "人气排序",
+                "value": "300"
+              },
+              {
+                "key": "距离排序",
+                "value": "12500"
+              },
+              {
+                "key": "人均排序",
+                "value": "151"
+              }
+            ],
+            "position": [
+              {
+                "key": "附近",
+                "value": "不限"
+              },
+              {
+                "key": "热门地标",
+                "value": "人民广场"
+              },
+              {
+                "key": "热门商圈",
+                "value": "人民广场"
+              }
+            ],
+            "select": [
+              {
+                "price": "100-300",
+                "special": ["网红店"]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "西塔老太太泥炉烤肉（宝山万达广场店）",
+            "images": 
+              "https://qcloud.dpfile.com/pc/K7b02tHYelUnKavc9GT5IjRZUXPsgEOeAdYfRHs1Fm5jkCTwHkU37pj5PWzLy1c5l0cm-Lf9tDMlLZpO7rb3bg.jpg",
+            "score": "4.9",
+            "averPrice": "137",
+            "type": "烤肉",
+            "area": "宝山万达",
+            "distance": "距您4.8km",
+            "sort": [
+                {
+                  "key": "人气排序",
+                  "value": "300"
+                },
+                {
+                  "key": "距离排序",
+                  "value": "4800"
+                },
+                {
+                  "key": "人均排序",
+                  "value": "137"
+                }
+              ],
+              "position": [
+                {
+                  "key": "附近",
+                  "value": "不限"
+                },
+                {
+                  "key": "热门地标",
+                  "value": "顾村公园"
+                },
+                {
+                  "key": "热门商圈",
+                  "value": "宝山万达"
+                }
+              ],
+              "select": [
+                {
+                  "price": "100-300",
+                  "special": ["网红店"]
+                }
+              ]
+          },
+          {
+            "id": 3,
+            "title": "西塔老太太泥炉烤肉（静安大悦城店）",
+            "images": 
+              "https://img.meituan.net/msmerchant/e6139c7c71496d186a70aa5f49b5e8323464774.jpg",
+            "score": "4.8",
+            "averPrice": "149",
+            "type": "烤肉",
+            "area": "静安大悦城",
+            "distance": "距您11.4km",
+            "sort": [
+              {
+                "key": "人气排序",
+                "value": "300"
+              },
+              {
+                "key": "距离排序",
+                "value": "11400"
+              },
+              {
+                "key": "人均排序",
+                "value": "149"
+              }
+            ],
+            "position": [
+              {
+                "key": "附近",
+                "value": "不限"
+              },
+              {
+                "key": "热门地标",
+                "value": "苏州河"
+              },
+              {
+                "key": "热门商圈",
+                "value": "苏河湾"
+              }
+            ],
+            "select": [
+              {
+                "price": "100-300",
+                "special": ["网红店"]
+              }
+            ]
+          }
+          
+    ]
+}

@@ -1,0 +1,34 @@
+{
+  "lists": [
+    { "id": "0", "pinyin": "xi'you'zhi", "name": "西柚汁" },
+    {
+      "id": "1",
+      "pinyin": "xi'ta'yao'jia'ni'lu'kao'rou",
+      "name": "西塔姚家泥炉烤肉"
+    },
+    {
+      "id": "2",
+      "pinyin": "xi'ta'lao'tai'tai'ni'lu'kao'rou",
+      "name": "西塔老太太泥炉烤肉（华润时代广场店）",
+      "score": "best"
+    },
+    {
+      "id": "3",
+      "pinyin": "xi'ta'lao'tai'tai'ni'lu'kao'rou",
+      "name": "西塔老太太泥炉烤肉（人广来福士店）",
+      "score": "best"
+    },
+    {
+      "id": "4",
+      "pinyin": "xi'ta'lao'tai'tai'ni'lu'kao'rou",
+      "name": "西塔老太太泥炉烤肉（宝山万达广场店）",
+      "score": "best"
+    },
+    {
+      "id": "5",
+      "pinyin": "xi'ta'lao'tai'tai'ni'lu'kao'rou",
+      "name": "西塔老太太泥炉烤肉（静安大悦城店）",
+      "score": "best"
+    }
+  ]
+}

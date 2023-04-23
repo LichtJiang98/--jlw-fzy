@@ -1,0 +1,57 @@
+[
+    {
+      "label": "附近",
+      "value": "A",
+      "children": [
+        {
+          "label": "不限",
+          "value": "A1"
+        },
+        {
+          "label": "500米以内",
+          "value": "A2"
+        },
+        {
+            "label": "1公里以内",
+            "value": "A3"
+        },
+        {
+            "label": "2公里以内",
+            "value": "A4"
+        }
+      ]
+    },
+    {
+        "label": "热门地标",
+        "value": "B",
+        "children": [
+        {
+            "label": "顾村公园",
+            "value": "B1"
+        },
+        {
+            "label": "上海大学",
+            "value": "B2"
+        }
+      ]
+    },
+    {
+        "label": "热门商圈",
+        "value": "C",
+        "children": [
+        {
+            "label": "龙湖天街",
+            "value": "C1"
+        },
+        {
+            "label": "宝山万达",
+            "value": "C2"
+        },
+        {
+            "label": "经纬汇",
+            "value": "C3"
+        }
+        
+      ]
+    }
+  ]
